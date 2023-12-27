@@ -6,8 +6,8 @@ tabuleiro = criar_tabuleiro()
 ganhador = verificar_ganhador(tabuleiro)
 while not ganhador:
     imprimir_tabuleiro(tabuleiro)
-    i = obter_input_valido("Digite a linha")
-    j = obter_input_valido("Digite a coluna")
+    i = obter_input_valido("Digite a linha: ")
+    j = obter_input_valido("Digite a coluna: ")
     
     if(verificar_movimento(tabuleiro, i, j)):
         realizar_movimento(tabuleiro, i, j, jogador)
