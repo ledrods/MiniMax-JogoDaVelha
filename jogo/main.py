@@ -10,4 +10,13 @@ while not ganhador:
     j = obter_input_valido("Digite a coluna")
     
     if(verificar_movimento(tabuleiro, i, j)):
-        realizar_movimento()
+        realizar_movimento(tabuleiro, i, j, jogador)
+        #troca o jogador
+        jogador = (jogador+1)%2
+
+    else:
+        print('A posição já está ocupada')
+
+    ganhador = verificar_ganhador(tabuleiro)
+
+print("Jogador {} Ganhou".format(ganhador))
