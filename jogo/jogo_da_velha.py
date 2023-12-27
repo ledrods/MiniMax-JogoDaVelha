@@ -12,7 +12,7 @@ def imprimir_tabuleiro(tabuleiro):
     for i in range(3):
         print("|".join(tabuleiro[i]))
         if(i < 2):
-            print("----------")
+            print("------")
 
 def obter_input_valido(mensagem):
     try:
